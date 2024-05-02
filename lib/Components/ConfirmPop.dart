@@ -16,7 +16,7 @@ Future<dynamic> BookedPopup(BuildContext context, String slotId, String amount,
     content: Column(
       children: [
         Lottie.asset(
-          'Assets/animation/done1.json',
+          'Assets/animation/confirm.json',
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

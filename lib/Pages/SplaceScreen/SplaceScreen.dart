@@ -61,7 +61,17 @@ class Splace_Screen extends StatelessWidget {
                       ),
                     )
                   ],
-                )
+                ),
+             SizedBox(height: 20),
+                 Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Made By ❤️ : $LeaderName",
+                  style: Theme.of(context).textTheme.labelSmall,
+                ),
+              ],
+            ),
               ],
             ),
           ),

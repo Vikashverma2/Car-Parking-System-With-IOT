@@ -1,5 +1,6 @@
-import 'package:car_parking_system/Controller/ParkingController.dart';
-import 'package:car_parking_system/Controller/IotController.dart';
+
+import 'package:car_paking_system/Controller/IotController.dart';
+import 'package:car_paking_system/Controller/ParkingController.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
@@ -73,7 +74,8 @@ class BookingPage extends StatelessWidget {
                           Icons.person,
                           color: Theme.of(context).colorScheme.primary,
                         ),
-                        hintText: "ZYX Kumar",
+                        hintText: "Full Name",
+                        hintStyle: TextStyle(color: Colors.grey),
                       ),
                     ),
                   )
@@ -83,7 +85,7 @@ class BookingPage extends StatelessWidget {
               const Row(
                 children: [
                   Text(
-                    "Enter Vehical Number ",
+                    "Enter Vehicle Number ",
                   )
                 ],
               ),
@@ -102,7 +104,8 @@ class BookingPage extends StatelessWidget {
                           Icons.car_rental,
                           color: Theme.of(context).colorScheme.primary,
                         ),
-                        hintText: "WB 04 ED 0987",
+                        hintText: "BR 00 XXXX",
+                         hintStyle: TextStyle(color: Colors.grey),
                       ),
                     ),
                   )
@@ -122,7 +125,7 @@ class BookingPage extends StatelessWidget {
               //   toTime: toTime,
               // ),
               Row(
-                children: [Text("Choose Slot Time (in Minuits)")],
+                children: [Text("Choose Slot Time (in Minutes)")],
               ),
               SizedBox(height: 10),
               Obx(

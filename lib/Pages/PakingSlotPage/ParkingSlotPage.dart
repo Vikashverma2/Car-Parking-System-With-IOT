@@ -1,5 +1,5 @@
-import 'package:car_parking_system/ConstData.dart';
-import 'package:car_parking_system/Pages/PakingSlotPage/Widgets/ParkingSlot.dart';
+
+import 'package:car_paking_system/Pages/PakingSlotPage/Widgets/ParkingSlot.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -42,10 +42,10 @@ class ParkingSlotPage extends StatelessWidget {
                 Expanded(
                     child: Obx(
                   () => ParkingSlot(
-                    parkingStatus: parkingController1.slot0.value.status!,
-                    slotName: "A-0",
-                    slotId: "A-0",
-                    time: parkingController1.slot0.value.time.toString(),
+                    parkingStatus: parkingController1.slot1.value.status!,
+                    slotName: "A-1",
+                    slotId: "A-1",
+                    time: parkingController1.slot1.value.time.toString(),
                   ),
                 )),
                 SizedBox(
@@ -56,20 +56,6 @@ class ParkingSlotPage extends StatelessWidget {
                     thickness: 1,
                   ),
                 ),
-                Expanded(
-                    child: Obx(
-                  () => ParkingSlot(
-                    parkingStatus: parkingController1.slot1.value.status!,
-                    slotName: "A-1",
-                    slotId: "A-1",
-                    time: parkingController1.slot1.value.time.toString(),
-                  ),
-                )),
-              ],
-            ),
-            const SizedBox(height: 20),
-            Row(
-              children: [
                 Expanded(
                     child: Obx(
                   () => ParkingSlot(
@@ -79,14 +65,11 @@ class ParkingSlotPage extends StatelessWidget {
                     time: parkingController1.slot2.value.time.toString(),
                   ),
                 )),
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: VerticalDivider(
-                    color: Theme.of(context).colorScheme.primary,
-                    thickness: 1,
-                  ),
-                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            Row(
+              children: [
                 Expanded(
                     child: Obx(
                   () => ParkingSlot(
@@ -96,6 +79,23 @@ class ParkingSlotPage extends StatelessWidget {
                     time: parkingController1.slot3.value.time.toString(),
                   ),
                 )),
+                SizedBox(
+                  width: 60,
+                  height: 60,
+                  child: VerticalDivider(
+                    color: Theme.of(context).colorScheme.primary,
+                    thickness: 1,
+                  ),
+                ),
+                Expanded(
+                    child: Obx(
+                  () => ParkingSlot(
+                    parkingStatus: parkingController1.slot4.value.status!,
+                    slotName: "A-4",
+                    slotId: "A-4",
+                    time: parkingController1.slot4.value.time.toString(),
+                  ),
+                )),
               ],
             ),
             const SizedBox(height: 20),
@@ -104,10 +104,10 @@ class ParkingSlotPage extends StatelessWidget {
                 Expanded(
                     child: Obx(
                   () => ParkingSlot(
-                    parkingStatus: parkingController1.slot4.value.status!,
-                    slotName: "A-4",
-                    slotId: "A-4",
-                    time: parkingController1.slot4.value.time.toString(),
+                    parkingStatus: parkingController1.slot5.value.status!,
+                    slotName: "A-5",
+                    slotId: "A-5",
+                    time: parkingController1.slot5.value.time.toString(),
                   ),
                 )),
                 SizedBox(
@@ -121,10 +121,10 @@ class ParkingSlotPage extends StatelessWidget {
                 Expanded(
                     child: Obx(
                   () => ParkingSlot(
-                    parkingStatus: parkingController1.slot5.value.status!,
-                    slotName: "A-5",
-                    slotId: "A-5",
-                    time: parkingController1.slot5.value.time.toString(),
+                    parkingStatus: parkingController1.slot6.value.status!,
+                    slotName: "A-6",
+                    slotId: "A-6",
+                    time: parkingController1.slot6.value.time.toString(),
                   ),
                 )),
               ],
@@ -135,10 +135,10 @@ class ParkingSlotPage extends StatelessWidget {
                 Expanded(
                     child: Obx(
                   () => ParkingSlot(
-                    parkingStatus: parkingController1.slot6.value.status!,
-                    slotName: "A-6",
-                    slotId: "A-6",
-                    time: parkingController1.slot6.value.time.toString(),
+                    parkingStatus: parkingController1.slot7.value.status!,
+                    slotName: "A-7",
+                    slotId: "A-7",
+                    time: parkingController1.slot7.value.time.toString(),
                   ),
                 )),
                 SizedBox(
@@ -152,10 +152,10 @@ class ParkingSlotPage extends StatelessWidget {
                 Expanded(
                   child: Obx(
                     () => ParkingSlot(
-                      parkingStatus: parkingController1.slot7.value.status!,
-                      slotName: "A-7",
-                      slotId: "A-7",
-                      time: parkingController1.slot7.value.time.toString(),
+                      parkingStatus: parkingController1.slot8.value.status!,
+                      slotName: "A-8",
+                      slotId: "A-8",
+                      time: parkingController1.slot8.value.time.toString(),
                     ),
                   ),
                 ),

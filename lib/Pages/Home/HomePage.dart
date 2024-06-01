@@ -1,10 +1,10 @@
-import 'package:car_parking_system/Controller/AuthController.dart';
-import 'package:car_parking_system/Controller/ParkingController.dart';
-import 'package:car_parking_system/Controller/ThemeController.dart';
-import 'package:car_parking_system/Pages/CCTVPage/CctvPage.dart';
-import 'package:car_parking_system/Pages/Notification/NotificationPage.dart';
-import 'package:car_parking_system/Pages/PakingSlotPage/ParkingSlotPage.dart';
-import 'package:car_parking_system/Pages/ProfilePage/ProfilePage.dart';
+
+import 'package:car_paking_system/Controller/AuthController.dart';
+import 'package:car_paking_system/Controller/ParkingController.dart';
+import 'package:car_paking_system/Controller/ThemeController.dart';
+import 'package:car_paking_system/Pages/Notification/NotificationPage.dart';
+import 'package:car_paking_system/Pages/PakingSlotPage/ParkingSlotPage.dart';
+import 'package:car_paking_system/Pages/ProfilePage/ProfilePage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -97,31 +97,31 @@ class HomePage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 30),
-            InkWell(
-              onTap: () async {
-                Get.to(const CctvPage());
-              },
-              child: Container(
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primaryContainer,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.videocam_rounded,
-                      size: 40,
-                    ),
-                    const SizedBox(width: 30),
-                    Text(
-                      "View CCTV Footage",
-                      style: Theme.of(context).textTheme.headlineMedium,
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            // InkWell(
+            //   onTap: () async {
+            //     Get.to(const CctvPage());
+            //   },
+            //   child: Container(
+            //     padding: const EdgeInsets.all(20),
+            //     decoration: BoxDecoration(
+            //       color: Theme.of(context).colorScheme.primaryContainer,
+            //       borderRadius: BorderRadius.circular(10),
+            //     ),
+            //     child: Row(
+            //       children: [
+            //         const Icon(
+            //           Icons.videocam_rounded,
+            //           size: 40,
+            //         ),
+            //         const SizedBox(width: 30),
+            //         Text(
+            //           "View CCTV Footage",
+            //           style: Theme.of(context).textTheme.headlineMedium,
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
             const SizedBox(height: 30),
             InkWell(
               onTap: () {

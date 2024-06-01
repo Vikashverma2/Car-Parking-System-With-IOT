@@ -1,4 +1,4 @@
-import 'package:car_parking_system/Models/ParkingModel.dart';
+import 'package:car_paking_system/Models/ParkingModel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +22,7 @@ class ParkingController extends GetxController {
   RxList<ParkingModel> yourBooking = RxList<ParkingModel>();
   RxBool isYourCarParked = false.obs;
   RxDouble time = 30.0.obs;
-  RxDouble amount = 1.5.obs;
+  RxDouble amount = 30.0.obs;
   RxBool isLoading = false.obs;
   Rx<ParkingModel> parkingSlot0 = ParkingModel().obs;
   Rx<ParkingModel> parkingSlot1 = ParkingModel().obs;
@@ -48,7 +48,7 @@ class ParkingController extends GetxController {
         status: "available",
         price: "0",
         parkingStatus: "available",
-        slotNumber: "A-0",
+        slotNumber: "A-1",
       ),
       ParkingModel(
         id: parkingSlot2Id,
@@ -56,7 +56,7 @@ class ParkingController extends GetxController {
         status: "available",
         price: "0",
         parkingStatus: "available",
-        slotNumber: "A-1",
+        slotNumber: "A-2",
       ),
       ParkingModel(
         id: parkingSlot3Id,
@@ -64,7 +64,7 @@ class ParkingController extends GetxController {
         status: "available",
         price: "0",
         parkingStatus: "available",
-        slotNumber: "A-2",
+        slotNumber: "A-3",
       ),
       ParkingModel(
         id: parkingSlot4Id,
@@ -72,7 +72,7 @@ class ParkingController extends GetxController {
         status: "available",
         price: "0",
         parkingStatus: "available",
-        slotNumber: "A-3",
+        slotNumber: "A-4",
       ),
       ParkingModel(
         id: parkingSlot5Id,
@@ -80,7 +80,7 @@ class ParkingController extends GetxController {
         status: "available",
         price: "0",
         parkingStatus: "available",
-        slotNumber: "A-4",
+        slotNumber: "A-5",
       ),
       ParkingModel(
         id: parkingSlot6Id,
@@ -88,18 +88,10 @@ class ParkingController extends GetxController {
         status: "available",
         price: "0",
         parkingStatus: "available",
-        slotNumber: "A-5",
-      ),
-      ParkingModel(
-        id: parkingSlot7Id,
-        name: "",
-        status: "available",
-        price: "0",
-        parkingStatus: "available",
         slotNumber: "A-6",
       ),
       ParkingModel(
-        id: parkingSlot8Id,
+        id: parkingSlot7Id,
         name: "",
         status: "available",
         price: "0",
@@ -114,6 +106,7 @@ class ParkingController extends GetxController {
         parkingStatus: "available",
         slotNumber: "A-8",
       ),
+     
     ]);
     for (var item in parkingList) {
       await db.collection("parking1").doc(item.id).set(item.toJson());

@@ -41,11 +41,11 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAPbGqIWW2PV-41frxHwTMZplIGvkWb22I',
-    appId: '1:647497483658:android:bb7891eb361ba7d4ff7473',
-    messagingSenderId: '647497483658',
-    projectId: 'smart-car-parking-system-e9378',
-    storageBucket: 'smart-car-parking-system-e9378.appspot.com',
+    apiKey: 'AIzaSyCApCNLHGG9dmI6MdcaZ5TZJjMWCgtdgNo',
+    appId: '1:1043321667298:android:81e08858376a36ac7268bb',
+    messagingSenderId: '1043321667298',
+    projectId: 'smart-car-parking-stystem',
+    storageBucket: 'smart-car-parking-stystem.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(

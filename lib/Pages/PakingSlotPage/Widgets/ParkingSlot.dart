@@ -1,5 +1,5 @@
 import 'package:another_dashed_container/another_dashed_container.dart';
-import 'package:car_parking_system/Pages/BookingPage/BookingPage.dart';
+import 'package:car_paking_system/Pages/BookingPage/BookingPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -67,7 +67,7 @@ class ParkingSlot extends StatelessWidget {
                       children: [
                         Image.asset(
                           "Assets/Photos/R.png",
-                          width: 130,
+                          width: 100,
                         )
                       ],
                     ),

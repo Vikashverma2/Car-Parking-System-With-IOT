@@ -1,6 +1,7 @@
-import 'package:car_parking_system/Controller/AuthController.dart';
-import 'package:car_parking_system/Controller/ParkingController.dart';
-import 'package:car_parking_system/Models/ParkingModel.dart';
+
+import 'package:car_paking_system/Controller/AuthController.dart';
+import 'package:car_paking_system/Controller/ParkingController.dart';
+import 'package:car_paking_system/Models/ParkingModel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -130,7 +131,7 @@ class ProfilePage extends StatelessWidget {
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text("Time : ${e.totalTime!} Mint"),
+                                          Text("Time : ${e.totalTime!} Minutes"),
                                           Text("Amout : ${e.totalAmount!} Rs")
                                         ],
                                       ),

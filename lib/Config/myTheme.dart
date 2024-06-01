@@ -1,4 +1,4 @@
-import 'package:car_parking_system/Config/Colors.dart';
+import 'package:car_paking_system/Config/Colors.dart';
 import 'package:flutter/material.dart';
 
 var lightTheme = ThemeData(

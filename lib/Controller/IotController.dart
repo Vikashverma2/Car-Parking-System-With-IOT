@@ -1,7 +1,7 @@
 import 'dart:convert';
-import 'package:car_parking_system/Components/ConfirmPop.dart';
-import 'package:car_parking_system/Models/ParkingModel.dart';
-import 'package:car_parking_system/Models/SlotModel.dart';
+
+import 'package:car_paking_system/Components/ConfirmPop.dart';
+import 'package:car_paking_system/Models/ParkingModel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -26,7 +26,6 @@ class ParkingController1 extends GetxController {
   var slot6Time = "".obs;
   var slot7Time = "".obs;
   var slot8Time = "".obs;
-  var slot0Id = "A-0";
   var slot1Id = "A-1";
   var slot2Id = "A-2";
   var slot3Id = "A-3";
@@ -35,7 +34,6 @@ class ParkingController1 extends GetxController {
   var slot6Id = "A-6";
   var slot7Id = "A-7";
   var slot8Id = "A-8";
-  Rx<SlotModel> slot0 = SlotModel().obs;
   Rx<SlotModel> slot1 = SlotModel().obs;
   Rx<SlotModel> slot2 = SlotModel().obs;
   Rx<SlotModel> slot3 = SlotModel().obs;
@@ -46,20 +44,14 @@ class ParkingController1 extends GetxController {
   Rx<SlotModel> slot8 = SlotModel().obs;
 
   @override
-  void onInit() {
+  Future<void> onInit() async {
     super.onInit();
-    initSlot();
+    await initSlot();
     startDataUpdates();
   }
 
   Future<void> initSlot() async {
     try {
-      await fb.ref().child(slot0Id).update(
-        {
-          "status": "avalible",
-          "time": 0,
-        },
-      );
       await fb.ref().child(slot1Id).update(
         {
           "status": "avalible",
@@ -108,6 +100,8 @@ class ParkingController1 extends GetxController {
           "time": 0,
         },
       );
+      
+     
     } catch (ex) {
       print(ex.toString());
     }
@@ -126,10 +120,10 @@ class ParkingController1 extends GetxController {
   }
 
   void getData() async {
-    final DatabaseReference res0 = fb.ref().child(slot0Id);
+    final DatabaseReference res0 = fb.ref().child(slot1Id);
     res0.onValue.listen((event) {
       DataSnapshot dataSnapshot = event.snapshot;
-      slot0.value = SlotModel.fromJson(
+      slot1.value = SlotModel.fromJson(
         json.decode(
           json.encode(dataSnapshot.value),
         ),
@@ -207,6 +201,7 @@ class ParkingController1 extends GetxController {
         ),
       );
     });
+   
   }
 
   void addCar(SlotModel car) {

@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "647497483658",
-    "project_id": "smart-car-parking-system-e9378",
-    "storage_bucket": "smart-car-parking-system-e9378.appspot.com"
+    "project_number": "1043321667298",
+    "project_id": "smart-car-parking-stystem",
+    "storage_bucket": "smart-car-parking-stystem.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:647497483658:android:bb7891eb361ba7d4ff7473",
+        "mobilesdk_app_id": "1:1043321667298:android:81e08858376a36ac7268bb",
         "android_client_info": {
           "package_name": "com.example.car_parking_system"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAPbGqIWW2PV-41frxHwTMZplIGvkWb22I"
+          "current_key": "AIzaSyCApCNLHGG9dmI6MdcaZ5TZJjMWCgtdgNo"
         }
       ],
       "services": {

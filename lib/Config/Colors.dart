@@ -5,6 +5,8 @@ const lightBgColor = Color(0xffFFFFFF);
 const lightFontColor = Color(0xff191B28);
 const lightDivColor = Color(0xffF5F6FA);
 const lightPrimaryColor = Color(0xff0057FF);
+// const lightPrimaryColor = Color.fromARGB(255, 0, 200, 255);
+
 const lightLableColor = Color(0xff8E8E8E);
 
 //😍  Dark Theme Color

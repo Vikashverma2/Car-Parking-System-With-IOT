@@ -1,5 +1,5 @@
-import 'package:car_parking_system/Controller/ParkingController.dart';
-import 'package:car_parking_system/Controller/SplaceController.dart';
+
+import 'package:car_paking_system/Controller/SplaceController.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
@@ -11,8 +11,8 @@ class Splace_Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SplaceController splaceController = Get.put(SplaceController());
     ParkingController1 parkingController1 = Get.put(ParkingController1());
+    SplaceController splaceController = Get.put(SplaceController());
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(20),
@@ -62,14 +62,17 @@ class Splace_Screen extends StatelessWidget {
                     )
                   ],
                 ),
-             SizedBox(height: 20),
+             SizedBox(height: 40),
                  Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "Made By ❤️ : $LeaderName",
-                  style: Theme.of(context).textTheme.labelSmall,
-                ),
+                Image.asset("Assets/Photos/tit.png", width: 160,)
+
+
+                // Text(
+                //   "Made By ❤️ : $LeaderName",
+                //   style: Theme.of(context).textTheme.labelSmall,
+                // ),
               ],
             ),
               ],

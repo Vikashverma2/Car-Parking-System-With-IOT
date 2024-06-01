@@ -1,5 +1,5 @@
-import 'package:car_parking_system/Pages/Auth/LoginPage.dart';
-import 'package:car_parking_system/Pages/GoogleMap/GoogleMap.dart';
+
+import 'package:car_paking_system/Pages/Auth/LoginPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -24,10 +24,10 @@ class AuthController extends GetxController {
         email: loginEmail.text,
         password: loginPwd.text,
       );
-      Get.offAll(
-        const GoogleMapPage(), // Change the page to the MapPage
-        transition: Transition.fadeIn,
-      );
+      // Get.offAll(
+      //   const GoogleMapPage(), // Change the page to the MapPage
+      //   transition: Transition.fadeIn,
+      // );
     } catch (e) {
       Get.snackbar(
         "Error",
@@ -45,10 +45,10 @@ class AuthController extends GetxController {
         email: signupEmail.text,
         password: signupPwd.text,
       );
-      Get.offAll(
-        const GoogleMapPage(), // Change the page to the MapPage
-        transition: Transition.fadeIn,
-      );
+      // Get.offAll(
+      //   const GoogleMapPage(), // Change the page to the MapPage
+      //   transition: Transition.fadeIn,
+      // );
     } catch (e) {
       Get.snackbar(
         "Error",

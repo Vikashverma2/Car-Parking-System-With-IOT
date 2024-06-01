@@ -50,7 +50,7 @@ Future<dynamic> BookedPopup(BuildContext context, String slotId, String amount,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Vehical No  : $vehicalNumber ",
+              "Vehicle No  : $vehicalNumber ",
               textAlign: TextAlign.center,
               style: const TextStyle(
                   fontSize: 20,
@@ -84,20 +84,7 @@ Future<dynamic> BookedPopup(BuildContext context, String slotId, String amount,
             ),
           ],
         ),
-        // Row(
-        //   mainAxisAlignment: MainAxisAlignment.center,
-        //   children: [
-        //   Image.asset("Assets/Icons/currency.png",width: 20,),
-        //     Text(
-        //       " $amount",
-        //       style: TextStyle(
-        //         fontSize: 40,
-        //         fontWeight: FontWeight.w700,
-        //         color: Theme.of(context).colorScheme.primary,
-        //       ),
-        //     ),
-        //   ],
-        // ),
+
         const SizedBox(height: 20),
         ElevatedButton(
           onPressed: () {
